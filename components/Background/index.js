@@ -32,7 +32,12 @@ export const Cloud = ({ top, left, float }) => {
             : "16s infinite alternate floatLeft",
       }}
     >
-      <img src="/static/img/Cloud.png" alt="nuage" width="100%" height="100%" />
+      <img
+        src="/static/img/Clouds.png"
+        alt="nuage"
+        width="100%"
+        height="100%"
+      />
     </Box>
   );
 };
@@ -42,8 +47,8 @@ export const Rock = () => {
     <Box
       position="absolute"
       bottom="70px"
-      left={{ xs: "130px", sm: "170px", md: "200px" }}
-      width={{ xs: "55%", sm: "70%", md: "80%" }}
+      left={{ xs: "55%", sm: "70%", md: "80%" }}
+      width={{ xs: "130px", sm: "170px", md: "200px" }}
     >
       <img src="/static/img/Rocks.png" alt="rock" width="100%" height="100%" />
     </Box>

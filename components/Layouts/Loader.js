@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { YellowLight, GreenLight } from "constants/colors";
 
 const AnimatedTitle = styled.h2`
-  text-shadow: 0 20px #2e2e31, 0 40px 60px #2e2e31;
+  text-shadow: 0 20px 25 px #2e2e31, 0 40px 60px #2e2e31;
   position: absolute;
   text-align: center;
   top: 40%;
