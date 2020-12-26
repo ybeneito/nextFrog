@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "press-start";
+	src: url("/static/fonts/press-start.ttf");
+}
+
+/** Animation Titre **/
+
+@keyframes rolling {
+	0% {
+		transform: translateX(-50%) translateY(-50%) rotate(0deg);
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) rotate(360deg);
+	}
+}
+
+/** Animation Page chargement **/
+
+@keyframes loader {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/** Animation Nuages  **/
+
+@keyframes floatRight {
+	0% {
+		transform: translateX(-100%) translateY(-50%);
+	}
+	100% {
+		transform: translateX(150%) translateY(-50%);
+	}
+}
+
+@keyframes floatLeft {
+	0% {
+		transform: translateX(100%) translateY(-50%);
+	}
+	100% {
+		transform: translateX(-150%) translateY(-50%);
+	}
+}
+
+/** Animation Etoiles  **/
+
+@keyframes fall {
+	40%,
+	100% {
+		opacity: 0;
+		transform: translate(0px, 90vh);
+	}
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+}
