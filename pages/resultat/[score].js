@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Layout from "components/Layouts/Layout";
 import Fraugue from "components/Dialog/Fraugue";
-import Socials from "components/Dialog/Socials";
+
 import Title from "components/Dialog/Title";
 import Button from "components/Dialog/Button";
 import Script from "components/Dialog/Script";
@@ -38,7 +38,7 @@ export const Outcome = () => {
       <Title onClick={GoBackHome} result={true} />
       <Script result={score} />
       <DynamicFinalScore score={score} />
-      <Socials />
+
       <Fraugue result={true} />
       <Button result={true} />
     </Layout>
