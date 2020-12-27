@@ -2,10 +2,8 @@ import { Box, Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
 export const Finalscore = ({ step }) => {
-
   const theme = useTheme();
   const matchMoreThanPhones = useMediaQuery(theme.breakpoints.up("sm"));
-
 
   let source;
   switch (step) {
@@ -44,26 +42,27 @@ export const Finalscore = ({ step }) => {
       <img
         src={source}
         alt="Coeurs pixels"
-        style= {{
-          width="20px",
-          height="20px",
-          zIndex= 30
+        style={{
+          width: "20px",
+          height: "20px",
+          zIndex: 30,
         }}
-      
       />
-      <Typography component="h2" variant={matchMoreThanPhones ? "h2" : "body1"} style={{margin:"0% 20px", textAlign="center"}}>
-          TON SCORE EST DE&nbsp;: {score}
-
+      <Typography
+        component="h2"
+        variant={matchMoreThanPhones ? "h2" : "body1"}
+        style={{ margin: "0% 20px", textAlign: "center" }}
+      >
+        TON SCORE EST DE&nbsp;: {score}
       </Typography>
       <img
         src={source}
         alt="Coeurs pixels"
-        style= {{
-          width="20px",
-          height="20px",
-          zIndex= 30
+        style={{
+          width: "20px",
+          height: "20px",
+          zIndex: 30,
         }}
-      
       />
     </Box>
   );

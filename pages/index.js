@@ -77,7 +77,7 @@ export default function Home({ talk }) {
       )}
       <Button
         step={step}
-        content={textReponses}
+        content={textButton}
         selected={selected}
         onClick={Increment}
       />
@@ -92,7 +92,7 @@ export default function Home({ talk }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/hello");
+  const res = await fetch("https://next-frog.vercel.app/api/hello");
   const talk = await res.json();
 
   return {
