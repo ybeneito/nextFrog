@@ -50,7 +50,7 @@ class MyDocument extends Document {
           <link
             rel="icon"
             href="/static/img/Fraugue/fraugue-mini.png"
-            size="16x16"
+            sizes="16x16"
             type="image/png"
           ></link>
         </Head>

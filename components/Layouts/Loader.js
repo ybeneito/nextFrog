@@ -73,7 +73,7 @@ export const Loader = ({ text, status }) => {
           variant={matchMoreThanPhones ? "h1" : "h3"}
           style={{ animation: "5s infinite alternate ease-in-out loader" }}
         >
-          {status ? "Chargement en cours..." : "Prêt !"}
+          {status ? "Chargement en cours..." : "Prêt!"}
         </Typography>
       </Box>
     </Box>

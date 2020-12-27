@@ -11,7 +11,7 @@ export const Script = ({ step, content, result }) => {
   let text;
   result & (result > 2)
     ? (text = `Félicitations ! Tu as reussi ce test!`)
-    : (text = `Aïe ! Retente ta chance ou révise plus avant!`);
+    : (text = `Aïe ! Retente ta chance ou retourne lire la doc ;)`);
 
   content &&
     content.map((element) => {

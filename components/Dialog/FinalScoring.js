@@ -1,12 +1,12 @@
 import { Box, Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
-export const Finalscore = ({ step }) => {
+export const FinalScoring = ({ score }) => {
   const theme = useTheme();
   const matchMoreThanPhones = useMediaQuery(theme.breakpoints.up("sm"));
 
   let source;
-  switch (step) {
+  switch (score) {
     case "0":
       source = "/static/img/Hearts/0pc.png";
       break;
@@ -68,4 +68,4 @@ export const Finalscore = ({ step }) => {
   );
 };
 
-export default Finalscore;
+export default FinalScoring;

@@ -1,5 +1,4 @@
-import dynamic from "next/dynamic";
-import { Box, Typography, useMediaQuery } from "@material-ui/core";
+import { Box, Typography, Button, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import { GreenDarkOpacity } from "constants/colors";
 
@@ -9,7 +8,7 @@ const Answer = ({ number, text, onClick, selected }) => {
 
   return (
     <Button
-      onclick={onClick}
+      onClick={onClick}
       style={{
         width: matchMoreThanPhones ? "40%" : "50%",
         zIndex: "20",
@@ -58,7 +57,7 @@ export const Quizz = ({ step, content, selected, setSelected }) => {
       <Answer
         selected={selected}
         number={1}
-        text={responses1}
+        text={response1}
         onClick={() => {
           setSelected(1);
         }}
@@ -66,7 +65,7 @@ export const Quizz = ({ step, content, selected, setSelected }) => {
       <Answer
         selected={selected}
         number={2}
-        text={responses2}
+        text={response2}
         onClick={() => {
           setSelected(2);
         }}
@@ -74,7 +73,7 @@ export const Quizz = ({ step, content, selected, setSelected }) => {
       <Answer
         selected={selected}
         number={3}
-        text={responses3}
+        text={response3}
         onClick={() => {
           setSelected(3);
         }}
@@ -82,7 +81,7 @@ export const Quizz = ({ step, content, selected, setSelected }) => {
       <Answer
         selected={selected}
         number={4}
-        text={responses4}
+        text={response4}
         onClick={() => {
           setSelected(4);
         }}

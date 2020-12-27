@@ -1,5 +1,6 @@
-import { useCallback } from "react";
 import dynamic from "next/dynamic";
+import { Box, Typography } from "@material-ui/core";
+import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Layout from "components/Layouts/Layout";
 import Fraugue from "components/Dialog/Fraugue";
@@ -9,10 +10,15 @@ import Button from "components/Dialog/Button";
 import Script from "components/Dialog/Script";
 
 const DynamicFinalScore = dynamic(
-  () => import("components/Dialog/Finalscore"),
+  () => import("components/Dialog/FinalScoring"),
   {
     loading: () => (
-      <p style={{ width: "100%", textAlign: "center" }}> Chargement ...</p>
+      <Box width="100%" height="auto" textAlign="center">
+        <Typography component="h4" variant="h4">
+          Chargement en cours ...
+        </Typography>
+        {""}
+      </Box>
     ),
   }
 );

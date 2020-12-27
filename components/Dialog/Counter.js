@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Box, Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 
