@@ -1,4 +1,5 @@
 export const GreenDark = "#092532";
+export const GreenLime = "#00FF00";
 export const GreenLight = "#89c9b8";
 export const GreenDarkOpacity = "rgba(9,37,50,0.4)";
 

@@ -23,7 +23,7 @@ export default function MyApp(props) {
     <React.Fragment>
       {/* La balise Head de Next s'utilise de la meme manière qu'un <head> en HTML5 */}
       <Head>
-        <title>Next4Frogs</title>
+        <title>Next Frogs</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
